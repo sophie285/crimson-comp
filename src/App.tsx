@@ -10,10 +10,12 @@ function App() {
     return <li>{todo}</li>;
   };
 
+  // handle changes to the input field
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputText(event.target.value);
   };
 
+  // when button is clicked, add task to list and reset input text
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (inputText.trim() !== '') {

@@ -13,14 +13,15 @@ export default function Modal() {
   // changes the color, but other functionality could be implemented
   const [buttonClicked, setButtonClicked] = useState(false);
 
+  // handle open and close buttons
   const openModal = () => {
     setIsOpen(true);
   };
-
   const closeModal = () => {
     setIsOpen(false);
     setButtonClicked(false);
   };
+
   return (
     <>
       {
